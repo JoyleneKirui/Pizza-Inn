@@ -71,13 +71,13 @@ $(document).ready(function() {
       
 
     $(".btn.complete").click(function() {
-      var myLocation = $(".location input").val();
-      
-      var text = "Your order has been received! We are dispatching our rider to " + myLocation + "\n Thank You!";
-      
-      
-      alert(text)
-      
+        var myLocation = $(".location input").val();
+
+
+        var text = "Your order has been received! We are dispatching our rider to " + myLocation + "\n Thank You!";
+
+        alert(text)
+        location.reload()
     });
 
   });
