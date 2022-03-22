@@ -7,11 +7,11 @@
 body{
     
     background-color: rgb(241, 227, 209);
-    height: 100vh;
+    
 }
-header{
+.header{
     color: green;
-    background-image: url(./assets/pizz.jpg);
+    background-image: url(/assets/pizz.jpg);
     height: 40vh;
     padding-top:5%;
     padding-left: 20px;
@@ -21,17 +21,30 @@ header{
 }
 .quote{
     color: olivedrab;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.4;
+    height: 40vh;
 }
 form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 60vh;
+    line-height: 1.9;
     
 }
 .form-group img{
    
     border-radius: 80px;
 }
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 footer{
    margin-top: 10%;
     height: 30vh;
