@@ -26,6 +26,19 @@ body{
     line-height: 1.4;
     height: 40vh;
 }
+.btn{
+    background-color: green;
+    display: flex;
+    margin-left: 45%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: large;
+    height: 30px;
+    display: flex;
+    width: 100px;
+    color: antiquewhite;
+    justify-content: center;
+}
 form {
     display: flex;
     flex-direction: row;
@@ -47,5 +60,5 @@ form {
 
 footer{
    margin-top: 10%;
-    height: 30vh;
+    height: 5vh;
 }
