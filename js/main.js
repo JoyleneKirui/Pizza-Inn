@@ -51,41 +51,34 @@ $(document).ready(function() {
     $(".btn.check-out").click(function() {
       $(".btn.add-pizza").hide();
       $(".btn.check-out").hide();
-      // $(".more-info").show();
-      // $(".btn.yes").show();
-      // $(".btn.no").show();
-      $(".more-info .location").hide();
+      $(".more-info").show();
+      $(".more-info .location").show();
       totalPrice = totalPrice + total;
+      totalWithDelivery = totalPrice + 200;
+      
      
       
       confirm("Would you like delivery!");
-      if (confirm == true) {
+      if (confirm ()== true) {
+        $(".more-info h3 span").html(totalWithDelivery);
+      }
+      else{
+       
         $(".more-info h3 span").html(totalPrice);
       }
     });
     
       
-      
-    $(".btn.yes").click(function() {
-      $(".more-info h5").hide();
-      $(".btn.yes").hide();
-      $(".btn.no").hide();
-      $(".more-info .location").show();
-      $(".more-info h3 span").html(totalPrice + 200);
-    });
-
-    $(".btn.no").click(function() {
-      $(".more-info h5").hide();
-      $(".btn.yes").hide();
-      $(".btn.no").hide();
-      $(".more-info .location").show();
-    });
 
     $(".btn.complete").click(function() {
-      var location = $(".more-info .location input").val();
-      $(".more-info h4").show();
-      $(".more-info .location").hide();
-      $(".more-info h4 span").html(location);
+      var myLocation = $(".location input").val();
+      
+      var text = "Your order has been received! We are dispatching our rider to " + myLocation + "\n Thank You!";
+      
+      
+      if(alert(text)){
+        location.reload(); 
+      }
     });
 
   });
