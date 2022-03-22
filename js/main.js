@@ -76,11 +76,9 @@ $(document).ready(function() {
       var text = "Your order has been received! We are dispatching our rider to " + myLocation + "\n Thank You!";
       
       
-      if(alert(text)){
-        location.reload(); 
-      }
+      alert(text)
+      
     });
 
   });
-
 });
