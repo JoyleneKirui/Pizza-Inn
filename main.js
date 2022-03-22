@@ -1,12 +1,10 @@
-
 $(document).ready(function() {
-
   $("table").hide();
-  $(".more-buttons").hide();
-  $(".more-info").hide();
+  $(".additional-buttons").hide();
+  $(".additional-info").hide();
   $(".btn.yes").hide();
   $(".btn.no").hide();
-  $(".more-info h4").hide();
+  $(".additional-info h4").hide();
 
   $('.btn.order').click(function() {
     var sizeOfPizza = $(".size option:selected").val();
@@ -17,7 +15,7 @@ $(document).ready(function() {
     var grandTotal = 0;
 
     $("table").show();
-    $(".more-buttons").show();
+    $(".additional-buttons").show();
     $(".btn.order").hide();
 
     $("#size").html($(".size option:selected").text() + " - " + sizeOfPizza);
@@ -53,35 +51,35 @@ $(document).ready(function() {
     $(".btn.check-out").click(function() {
       $(".btn.add-pizza").hide();
       $(".btn.check-out").hide();
-      $(".more-info").show();
+      $(".additional-info").show();
       $(".btn.yes").show();
       $(".btn.no").show();
-      $(".more-info .location").hide();
+      $(".additional-info .location").hide();
       grandTotal = grandTotal + total;
 
-      $(".more-info h3 span").html(grandTotal);
+      $(".additional-info h3 span").html(grandTotal);
     });
 
     $(".btn.yes").click(function() {
-      $(".more-info h5").hide();
+      $(".additional-info h5").hide();
       $(".btn.yes").hide();
       $(".btn.no").hide();
-      $(".more-info .location").show();
-      $(".more-info h3 span").html(grandTotal + 200);
+      $(".additional-info .location").show();
+      $(".additional-info h3 span").html(grandTotal + 200);
     });
 
     $(".btn.no").click(function() {
-      $(".more-info h5").hide();
+      $(".additional-info h5").hide();
       $(".btn.yes").hide();
       $(".btn.no").hide();
-      $(".more-info .location").show();
+      $(".additional-info .location").show();
     });
 
     $(".btn.complete").click(function() {
-      var location = $(".more-info .location input").val();
-      $(".more-info h4").show();
-      $(".more-info .location").hide();
-      $(".more-info h4 span").html(location);
+      var location = $(".additional-info .location input").val();
+      $(".additional-info h4").show();
+      $(".additional-info .location").hide();
+      $(".additional-info h4 span").html(location);
     });
 
   });
