@@ -47,7 +47,11 @@ form {
     line-height: 1.9;
     
 }
-
+select{
+    width: 110px;
+    height: 30px;
+    font-size: 15px;
+}
 .form-group img{
    
     border-radius: 80px;
@@ -64,5 +68,22 @@ form {
 }
 footer{
    margin-top: 10%;
-    height: 3vh;
+   height: 6vh;
+}
+.last {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  
+}
+.face{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color:rgb(4, 4, 58);
+}
+.face li{
+    padding-right: 15px;
 }
