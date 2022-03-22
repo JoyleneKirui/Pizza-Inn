@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: rgb(241, 227, 209);
+    height: 100vh;
+}
+header{
+    color: green;
+    background-image: url(/assets/pizz.jpg);
+    height: 40vh;
+    padding-top:5%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.quote{
+    color: olivedrab;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.form-group img{
+   
+    border-radius: 80px;
+}
+footer{
+   margin-top: 10%;
+    height: 30vh;
+}
