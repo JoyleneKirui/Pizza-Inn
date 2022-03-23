@@ -11,7 +11,7 @@ body{
 }
 .header{
     color: green;
-    background-image: url(../assets/pizz.jpg);
+    background-image: url(./assets/pizz.jpg);
     height: 40vh;
     padding-top:5%;
     padding-left: 20px;
