@@ -39,7 +39,7 @@ Each pizza topping should have a set value depending on the size of the pizza.
 
 
 ## Known Bugs
-There are known bugs 
+There are no known bugs 
 
 ## Authors
 Joylene Chepkoech Kirui
